@@ -7,10 +7,7 @@
 */
 
 @charset "UTF-8";
-
-/* hero-stats */
-
-
+hero-stats
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
@@ -1012,7 +1009,8 @@ section,
 }
 
 .hero .hero-content .hero-stats {
-    background-color: black;
+    /* background-color: color-mix(in srgb, var(--background-color), transparent 90%); */
+    background-color: color-mix(in srgb, var(--background-color), transparent 70%);
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 2rem;
