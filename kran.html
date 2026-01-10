@@ -167,13 +167,7 @@
         <script>
             document.addEventListener("DOMContentLoaded", function() {
 
-                const API_BASE =
-                    location.hostname === "localhost" || location.hostname === "127.0.0.1" ?
-                    "http://127.0.0.1:8000" :
-                    "dahanuz-frontend.netlify.app";
-
-                const API_URL = `${API_BASE}/krans/`;
-
+                const API_URL = "http://127.0.0.1:8000/krans/";
                 const container = document.getElementById("kran-container");
                 const template = document.getElementById("kran-template");
 
@@ -184,9 +178,6 @@
                     .then(data => {
                         KRANS_CACHE = data;
                         renderKrans();
-                    })
-                    .catch(err => {
-                        console.error("API error:", err);
                     });
 
                 function getLang() {
@@ -200,15 +191,18 @@
                     KRANS_CACHE.forEach(kran => {
                         const clone = template.content.cloneNode(true);
 
+                        // 🔗 CARD BOSILADIGAN QILAMIZ
                         const card = clone.querySelector(".team-member");
                         card.style.cursor = "pointer";
                         card.addEventListener("click", () => {
                             window.location.href = `project-details copy.html?id=${kran.id}`;
                         });
 
+                        // 🔤 NAME (o‘zgarmadi)
                         clone.querySelector(".kran-name").innerText =
                             lang === "ru" ? kran.name_ru : kran.name_uz;
 
+                        // 📋 DESCRIPTION O‘RNIGA TEXNIK MA’LUMOT
                         clone.querySelector(".kran-desc").innerText = lang === "ru" ?
                             `Макс. грузоподъёмность: ${kran.maxliftingcap}
 Макс. радиус: ${kran.maxradius}
@@ -219,6 +213,7 @@ Maksimal radius: ${kran.maxradius}
 Ishchi yuklama: ${kran.liftingcap}
 Ilgak ko‘tarilishi: ${kran.hooklifting}`;
 
+                        // 🖼️ IMAGES (o‘zgarmadi)
                         const wrapper = clone.querySelector(".swiper-wrapper");
                         wrapper.innerHTML = "";
 
@@ -248,7 +243,9 @@ Ilgak ko‘tarilishi: ${kran.hooklifting}`;
                     });
                 }
 
+                // 🔥 TIL O‘ZGARSA QAYTA CHIQARADI
                 window.addEventListener("langChanged", renderKrans);
+
             });
         </script>
 
