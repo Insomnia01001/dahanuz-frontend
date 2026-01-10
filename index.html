@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Index - iConstruction Bootstrap Template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: iConstruction
+  * Template URL: https://bootstrapmade.com/iconstruction-bootstrap-construction-template/
+  * Updated: Jul 27 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <a href="index.html" class="log d-flex align-items-center me-auto">
+                <img src="assets/img/logo_16f18a4f.png" alt="">
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li>
+                        <a href="project-details copy.html" class="active" data-uz="Bosh sahifa" data-ru="Главная">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#abt" data-uz="Kompaniya haqida" data-ru="О компании">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#servis" data-uz="Xizmatlar" data-ru="Услуги">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="kran.html" data-uz="Kranlar" data-ru="Краны">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="lift.html" data-uz="Liftlar" data-ru="Лифты">
+                        </a>
+                    </li>
+
+
+                    <li class="dropdown">
+                        <a href="#">
+                            <span data-uz="Korporativ displey" data-ru="Корпоративный дисплей">
+    </span>
+                            <i class="bi bi-chevron-down toggle-dropdown"></i>
+                        </a>
+
+                        <ul>
+                            <li>
+                                <a href="service-details.html" data-uz="Kompaniya taqdimoti" data-ru="Представление компании">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="project-details.html" data-uz="Galereya" data-ru="Галерея">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+
+
+                    <li>
+                        <a href="contact.html" data-uz="Kontaktlar" data-ru="Контакты">
+                        </a>
+                    </li>
+                    <!-- LANGUAGE -->
+                    <li class="dropdown">
+                        <a href="#">
+                            <span id="current-lang">UZ</span>
+                            <i class="bi bi-chevron-down toggle-dropdown"></i>
+                        </a>
+                        <ul>
+                            <li><a href="#" onclick="setLang('uz')">UZ</a></li>
+                            <li><a href="#" onclick="setLang('ru')">RU</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- 
+    <h1 id="name"></h1>
+
+    <ul>
+        <li><b>Yili:</b> <span id="year"></span></li>
+        <li><b>Maks. yuk ko‘tarish:</b> <span id="maxliftingcap"></span></li>
+        <li><b>Maks. radius:</b> <span id="maxradius"></span></li>
+        <li><b>Strela oxiridagi yuk:</b> <span id="liftingcap"></span></li>
+        <li><b>Ilgak ko‘tarish balandligi:</b> <span id="hooklifting"></span></li>
+    </ul>
+
+    <p id="description"></p>
+
+    <div id="images"></div>
+
+    <script>
+        fetch("http://127.0.0.1:8000/krans/1")
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("name").innerText = data.name;
+                document.getElementById("year").innerText = data.year;
+                document.getElementById("maxliftingcap").innerText = data.maxliftingcap;
+                document.getElementById("maxradius").innerText = data.maxradius;
+                document.getElementById("liftingcap").innerText = data.liftingcap;
+                document.getElementById("hooklifting").innerText = data.hooklifting;
+                document.getElementById("description").innerText = data.description;
+
+                const imagesDiv = document.getElementById("images");
+                imagesDiv.innerHTML = "";
+
+                data.images.forEach(img => {
+                    const image = document.createElement("img");
+                    image.src = img.image_url;
+                    image.style.width = "200px";
+                    image.style.margin = "10px";
+                    imagesDiv.appendChild(image);
+                });
+            })
+            .catch(err => console.error(err));
+    </script> -->
+
+
+
+
+
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero section dark-background ">
+
+            <div class="hero-video-container">
+                <!-- <video autoplay="" muted="" loop="">
+          <source src="assets/img/construction/video-1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> -->
+                <img class="w-[100%] h-[100%]" src="assets/img/slide/e8ee850f4823764d.jpg_20250710175343_1920x0.webp" alt="">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <div class="hero-content">
+                            <h1 data-aos="fade-up" data-aos-delay="200">DAHAN</h1>
+                            <p class="inline-block px-4 py-2 rounded-lg font-semibold
+         bg-black/15 backdrop-blur-sm
+         shadow-lg shadow-black/10
+         text-white" data-aos="fade-up" data-aos-delay="300" data-ru="Надёжные башенные краны для современных строительных проектов" data-uz="Zamonaviy qurilish loyihalari uchun ishonchli minorali kranlar">
+                            </p>
+
+
+
+                            <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+                                <a href="quote.htm" class="btn btn-primary">Kраны</a>
+                                <a href="projects.html" class="btn btn-secondary">Лифты</a>
+                            </div>
+
+                            <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                                <div class="row">
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="stat-item">
+                                            <span class="stat-number" data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="2">50+</span>
+                                            <span class="stat-label" data-ru="Экспорт в более чем 50 стран и регионов мира" data-uz="Mahsulotlarimiz dunyoning 50 dan ortiq mamlakat va hududlariga eksport qilinadi">
+                </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="stat-item">
+                                            <span class="stat-number" data-purecounter-start="0" data-purecounter-end="2300" data-purecounter-duration="2">2300+</span>
+                                            <span class="stat-label" data-ru="Более 2 300 квалифицированных сотрудников" data-uz="2 300 dan ortiq malakali xodimlar faoliyat yuritadi">
+                </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="stat-item">
+                                            <span class="stat-number" data-purecounter-start="0" data-purecounter-end="50000" data-purecounter-duration="2">50000+</span>
+                                            <span class="stat-label" data-ru="Произведено и поставлено более 50 000 комплектов кранов и подъёмников" data-uz="50 mingdan ortiq kranlar va ko‘tarish uskunalari ishlab chiqarilgan">
+                </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Hero Section -->
+
+        <!-- About Section -->
+        <section id="abt" class="about section px-14">
+            <div class="container section-title" data-aos="fade-up">
+                <h2 data-uz="Kompaniya haqida" data-ru="О компании">
+                </h2>
+
+                <p data-uz="Biz qurilish texnikasi sohasida ishonchli yechimlar, yuqori sifat va professional xizmatlarni taqdim etamiz." data-ru="Мы предоставляем надежные решения, высокое качество и профессиональные услуги в сфере строительной техники.">
+                </p>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="200">
+                        <div class="content">
+                            <h2 class="section-heading mb-4" data-uz="Dahan Construction Machinery Co., Ltd (Guruh)" data-ru="Dahan Construction Machinery Co., Ltd (Группа)">
+                            </h2>
+
+                            <p class="lead-text mb-4" data-uz="Dahan Construction Machinery Co., Ltd — Xitoyning qurilish texnikasi sohasidagi yirik korxonalaridan biri bo‘lib, minorali kranlar va qurilish liftlarini ishlab chiqarishga ixtisoslashgan. Ustav kapitali 100 million yuan bo‘lgan kompaniya ilmiy-tadqiqot va ishlanmalar, ishlab chiqarish, savdo, xizmat ko‘rsatish hamda moliyaviy faoliyatni yagona tizimda birlashtiradi. Kompaniya 2000-yil noyabr oyida tashkil etilgan bo‘lib, 17 yillik jadal rivojlanish natijasida yillik ishlab chiqarish quvvati o‘n mingdan ortiq uskunani tashkil etadi va Xitoyda minorali kranlar hamda qurilish liftlari sanoatining yetakchi brendlaridan biriga aylangan."
+                                data-ru="Dahan Construction Machinery Co., Ltd — одно из крупнейших предприятий Китая в сфере строительной техники, специализирующееся на производстве башенных кранов и строительных лифтов. Компания с уставным капиталом 100 миллионов юаней объединяет научно-исследовательскую деятельность, производство, продажи, сервис и финансы в единую систему. Основанная в ноябре 2000 года, за 17 лет стремительного развития компания достигла годовой производственной мощности более десяти тысяч единиц техники и стала одним из ведущих брендов в индустрии башенных кранов и лифтов Китая.">
+                            </p>
+
+                            <p class="description-text mb-5" data-uz="Guruhning bosh qarorgohi Xitoy Xalq Respublikasining Jinan shahrida joylashgan. Kompaniya zamonaviy ofis infratuzilmasini barpo etgan va ilmiy asoslangan hamda samarali boshqaruv tizimini joriy qilgan. Ishlab chiqarish bazalari Jinan Minshuy iqtisodiy rivojlanish zonasi, Foshan (Guandun viloyati) va Iyan (Xunan viloyati) hududlarida joylashgan bo‘lib, ularning umumiy maydoni 300 000 kvadrat metrdan ortiq. Hozirda Guruh tarkibida uchta ishlab chiqarish bazasi, yettita operatsion markaz, sakkizta marketing kompaniyasi, bitta moliyaviy lizing kompaniyasi hamda bitta import-eksport kompaniyasi faoliyat yuritmoqda."
+                                data-ru="Штаб-квартира Группы расположена в городе Цзинань, Китайская Народная Республика. Компания располагает современной офисной инфраструктурой и внедрила научно обоснованную и эффективную систему управления. Производственные базы находятся в зоне экономического развития Цзинань Миншуй, в городе Фошань (провинция Гуандун) и городе Иян (провинция Хунань), а их общая площадь превышает 300 000 квадратных метров. В настоящее время в состав Группы входят три производственные базы, семь операционных центров, восемь маркетинговых компаний, одна компания финансового лизинга и одна компания по импорту и экспорту.">
+                            </p>
+
+                            <!-- <div class="stats-grid">
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="stat-number">25+</div>
+                                    <div class="stat-label">Years Experience</div>
+                                </div>
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="350">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="stat-number">98%</div>
+                                    <div class="stat-label">Client Satisfaction</div>
+                                </div>
+                            </div> -->
+
+                            <!-- <div class="cta-section" data-aos="fade-up" data-aos-delay="450">
+                                <a href="#services" class="cta-link">
+                  Explore Our Services
+                  <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="200">
+                        <div class="image-section">
+                            <div class="main-image">
+                                <img src="assets/img/slide//4.jpg" alt="Construction project showcase" class="img-fluid">
+                            </div>
+                            <!-- <div class="floating-badge" data-aos="zoom-in" data-aos-delay="500">
+                                <div class="badge-content">
+                                    <i class="bi bi-award"></i>
+                                    <div class="badge-text">
+                                        <span class="badge-title">Quality Certified</span>
+                                        <span class="badge-subtitle">Since 1999</span>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /About Section -->
+
+
+        <!-- About Section -->
+        <section id="about" class="about section px-14">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="200">
+                        <div class="content">
+                            <h2 class="section-heading mb-4" data-uz="Biz ishlab chiqdik" data-ru="Мы разработали">
+                            </h2>
+
+                            <p class="lead-text mb-4" data-uz="Biz 5 ta mahsulot seriyasi, 30 dan ortiq tur va 60 dan ziyod modelni ishlab chiqdik. Ular orasida yuqori yig‘imli minorali kranlar, tekis tomli minorali kranlar, ko‘tariluvchi strelali minorali kranlar hamda qurilish liftlari mavjud. 2016-yil oxiriga kelib, kompaniya 200 kishidan iborat marketing jamoasini shakllantirdi va Xitoy bo‘ylab qariyb 1 000 ta savdo nuqtasini yo‘lga qo‘ydi. Dahan kompaniyasining 60 000 dan ortiq minorali kran va liftlari Xitoyning 32 ta provinsiyasi va shaharlarida foydalanilmoqda hamda dunyoning 100 dan ortiq mamlakat va hududlariga eksport qilingan."
+                                data-ru="Мы разработали 5 серий продукции, более 30 видов и свыше 60 моделей, включая башенные краны с верхним комплектом, краны с плоской стрелой, краны с подъемной стрелой и строительные лифты. К концу 2016 года компания сформировала маркетинговую команду из 200 специалистов и почти 1 000 торговых точек по всему Китаю. Более 60 000 комплектов башенных кранов и лифтов Dahan эксплуатируются в 32 провинциях и городах Китая и экспортируются в более чем 100 стран и регионов мира.">
+                            </p>
+
+                            <p class="description-text mb-5" data-uz="Dahan kompaniyasi Tyantszin shahridagi Binhay yangi hududida Zhongkang International Financial Leasing Co., Ltd bilan qo‘shma korxona tashkil etdi. 50 million AQSh dollari ustav kapitaliga ega ushbu kompaniya mijozlarga samarali moliyalashtirish yechimlarini taqdim etib, mahsulotlarni oddiy sotish modelidan integratsiyalashgan mahsulotlar va moliyaviy xizmatlar asosidagi marketing modeliga o‘tishni ta’minlaydi."
+                                data-ru="Компания Dahan учредила совместное предприятие Zhongkang International Financial Leasing Co., Ltd в новом районе Биньхай города Тяньцзинь с уставным капиталом 50 миллионов долларов США. Это позволило компании эффективно предоставлять клиентам финансовые решения и перейти от традиционной модели продаж продукции к маркетинговой модели комплексного предложения продуктов и финансовых услуг.">
+                            </p>
+
+                            <div class="stats-grid">
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="stat-number">50+</div>
+                                    <div class="stat-label" data-ru="Продукция экспортируется более чем в 50 стран и регионов мира" data-uz="Mahsulotlarimiz dunyoning 50 dan ortiq mamlakat va hududlariga eksport qilinadi">
+                                    </div>
+                                </div>
+
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="350">
+                                    <div class="stat-number">2300+</div>
+                                    <div class="stat-label" data-ru="В нашей компании работают более 2 300 квалифицированных сотрудников" data-uz="Kompaniyamizda 2 300 dan ortiq malakali xodimlar faoliyat yuritadi">
+                                    </div>
+                                </div>
+
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="stat-number">50000+</div>
+                                    <div class="stat-label" data-ru="Произведено и поставлено более 50 000 комплектов кранов и подъёмников" data-uz="50 mingdan ortiq kranlar va ko‘tarish uskunalari ishlab chiqarilgan">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="200">
+                        <div class="image-section">
+                            <div class="main-image">
+                                <img src="assets/img/slide/03_875d99fc.jpg_20250704145021_1920x0.webp" alt="Construction project showcase" class="img-fluid">
+                            </div>
+                            <!-- <div class="floating-badge" data-aos="zoom-in" data-aos-delay="500">
+                                <div class="badge-content">
+                                    <i class="bi bi-award"></i>
+                                    <div class="badge-text">
+                                        <span class="badge-title">Quality Certified</span>
+                                        <span class="badge-subtitle">Since 1999</span>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /About Section -->
+
+
+
+
+
+        <!-- Services Section -->
+        <!-- <section id="serv" class="services section light-background">
+
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Services</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="services-grid">
+
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="150">
+                        <div class="service-number">01</div>
+                        <div class="service-icon">
+                            <i class="bi bi-buildings"></i>
+                        </div>
+                        <h3>Commercial Construction</h3>
+                        <p>Comprehensive commercial building solutions from office complexes to retail spaces, delivered with precision and expertise.</p>
+                        <a href="service-details.html" class="service-cta">
+                            <span>Explore Service</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-number">02</div>
+                        <div class="service-icon">
+                            <i class="bi bi-house-heart"></i>
+                        </div>
+                        <h3>Residential Projects</h3>
+                        <p>Custom home construction and renovation services that transform your vision into reality with attention to every detail.</p>
+                        <a href="service-details.html" class="service-cta">
+                            <span>Explore Service</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="service-item featured" data-aos="fade-up" data-aos-delay="250">
+                        <div class="featured-badge">Premium</div>
+                        <div class="service-number">03</div>
+                        <div class="service-icon">
+                            <i class="bi bi-gear-wide-connected"></i>
+                        </div>
+                        <h3>Design Build Services</h3>
+                        <p>Integrated approach combining architectural design and construction expertise for seamless project delivery.</p>
+                        <a href="quote.html" class="service-cta">
+                            <span>Get Quote</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-number">04</div>
+                        <div class="service-icon">
+                            <i class="bi bi-clipboard2-check"></i>
+                        </div>
+                        <h3>Project Consulting</h3>
+                        <p>Expert guidance through every phase of construction with strategic planning and professional oversight.</p>
+                        <a href="service-details.html" class="service-cta">
+                            <span>Explore Service</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="350">
+                        <div class="service-number">05</div>
+                        <div class="service-icon">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h3>Renovation &amp; Remodeling</h3>
+                        <p>Transform existing spaces with modern upgrades while preserving structural integrity and aesthetic appeal.</p>
+                        <a href="service-details.html" class="service-cta">
+                            <span>Explore Service</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-number">06</div>
+                        <div class="service-icon">
+                            <i class="bi bi-arrows-fullscreen"></i>
+                        </div>
+                        <h3>Site Development</h3>
+                        <p>Complete site preparation including excavation, grading, and utility installation for optimal project foundation.</p>
+                        <a href="service-details.html" class="service-cta">
+                            <span>Explore Service</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section> -->
+        <!-- /Services Section -->
+
+
+        <!-- Testimonials Section -->
+        <!-- <section id="testimonials" class="testimonials section"> -->
+
+        <!-- Section Title -->
+        <!-- <div class="container section-title" data-aos="fade-up">
+                <h2>Testimonials</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div> -->
+        <!-- End Section Title -->
+        <!-- <section id="testimonials" class="testimonials section">
+
+            <div class="container">
+
+                <div class="testimonial-masonry">
+
+                    <div class="testimonial-item" data-aos="fade-up">
+                        <div class="testimonial-content">
+                            <div class="quote-pattern">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <p>Implementing innovative strategies has revolutionized our approach to market challenges and competitive positioning.</p>
+                            <div class="client-info">
+                                <div class="client-image">
+                                    <img src="assets/img/person/person-f-7.webp" alt="Client">
+                                </div>
+                                <div class="client-details">
+                                    <h3>Rachel Bennett</h3>
+                                    <span class="position">Strategy Director</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-content">
+                            <div class="quote-pattern">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <p>Exceptional service delivery and innovative solutions have transformed our business operations, leading to remarkable growth and enhanced customer satisfaction across all touchpoints.</p>
+                            <div class="client-info">
+                                <div class="client-image">
+                                    <img src="assets/img/person/person-m-7.webp" alt="Client">
+                                </div>
+                                <div class="client-details">
+                                    <h3>Daniel Morgan</h3>
+                                    <span class="position">Chief Innovation Officer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-content">
+                            <div class="quote-pattern">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <p>Strategic partnership has enabled seamless digital transformation and operational excellence.</p>
+                            <div class="client-info">
+                                <div class="client-image">
+                                    <img src="assets/img/person/person-f-8.webp" alt="Client">
+                                </div>
+                                <div class="client-details">
+                                    <h3>Emma Thompson</h3>
+                                    <span class="position">Digital Lead</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-content">
+                            <div class="quote-pattern">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <p>Professional expertise and dedication have significantly improved our project delivery timelines and quality metrics.</p>
+                            <div class="client-info">
+                                <div class="client-image">
+                                    <img src="assets/img/person/person-m-8.webp" alt="Client">
+                                </div>
+                                <div class="client-details">
+                                    <h3>Christopher Lee</h3>
+                                    <span class="position">Technical Director</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="400">
+                        <div class="testimonial-content">
+                            <div class="quote-pattern">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <p>Collaborative approach and industry expertise have revolutionized our product development cycle, resulting in faster time-to-market and increased customer engagement levels.</p>
+                            <div class="client-info">
+                                <div class="client-image">
+                                    <img src="assets/img/person/person-f-9.webp" alt="Client">
+                                </div>
+                                <div class="client-details">
+                                    <h3>Olivia Carter</h3>
+                                    <span class="position">Product Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="testimonial-content">
+                            <div class="quote-pattern">
+                                <i class="bi bi-quote"></i>
+                            </div>
+                            <p>Innovative approach to user experience design has significantly enhanced our platform's engagement metrics and customer retention rates.</p>
+                            <div class="client-info">
+                                <div class="client-image">
+                                    <img src="assets/img/person/person-m-13.webp" alt="Client">
+                                </div>
+                                <div class="client-details">
+                                    <h3>Nathan Brooks</h3>
+                                    <span class="position">UX Director</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section> -->
+        <!-- /Testimonials Section -->
+
+        <!-- Certifications Section -->
+        <section id="servis" class="certifications section light-background px-14">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2 data-uz="Xizmatlar" data-ru="Услуги">
+                </h2>
+
+                <p data-uz="Qurilish texnikasini yetkazib berishdan tortib montaj va servis xizmatlarigacha bo‘lgan to‘liq yechimlarni taklif etamiz." data-ru="Мы предлагаем полный спектр решений — от поставки строительной техники до монтажа и сервисного обслуживания.">
+                </p>
+            </div>
+
+            <!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-5 mt-4">
+
+                    <div class="col-lg-3 col-md-6 hover:text-orange-600" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="certification-item">
+                            <div class="certification-badge">
+                                <!-- <img src="assets/img/construction/badge-1.webp" alt="" class="img-fluid"> -->
+                                <i class="fa-brands fa-sellsy text-4xl "></i>
+                            </div>
+                            <h4 data-uz="DAHAN minorali kranlarini sotish" data-ru="Продажа башенных кранов DAHAN">
+                            </h4>
+                            <p data-uz="Xitoyda ishlab chiqarilgan sertifikatlangan minorali kranlarni yetkazib berish." data-ru="Поставка сертифицированных башенных кранов китайского производства.">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 hover:text-orange-600" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="certification-item">
+                            <div class="certification-badge">
+                                <!-- <img src="assets/img/construction/badge-2.webp" alt="" class="img-fluid"> -->
+                                <i class="fa-solid fa-pen-ruler text-4xl"></i>
+                            </div>
+                            <h4 data-uz="PPRps loyihalarini ishlab chiqish" data-ru="Разработка ППРпс">
+                            </h4>
+                            <p data-uz="Qurilish maydonlari uchun texnik va xavfsizlik hujjatlarini tayyorlash." data-ru="Подготовка технической и проектной документации для строительных объектов.">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 hover:text-orange-600" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="certification-item">
+                            <div class="certification-badge">
+                                <i class="fa-solid fa-truck text-4xl"></i>
+                            </div>
+                            <h4 data-uz="Texnikani yetkazib berish" data-ru="Доставка техники на объект">
+                            </h4>
+                            <p data-uz="Qurilish maydonchasiga texnikani xavfsiz va o‘z vaqtida yetkazish." data-ru="Своевременная и безопасная доставка техники на строительную площадку.">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 hover:text-orange-600" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="certification-item">
+                            <div class="certification-badge">
+                                <i class="fa-solid fa-screwdriver-wrench text-4xl"></i>
+                            </div>
+                            <h4 data-uz="Uskunalarni montaj qilish" data-ru="Монтаж оборудования">
+                            </h4>
+                            <p data-uz="Malakali mutaxassislar tomonidan professional montaj ishlari." data-ru="Профессиональный монтаж оборудования квалифицированными специалистами.">
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row gy-5 mt-4">
+
+                    <div class="col-lg-3 col-md-6 hover:text-orange-600" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="certification-item">
+                            <div class="certification-badge">
+                                <i class="fa-solid fa-user-tie text-4xl"></i>
+                            </div>
+                            <h4 data-uz="Puska-sozlash ishlari" data-ru="Пусконаладочные работы">
+                            </h4>
+                            <p data-uz="Texnikaning to‘liq ishga tayyor holatga keltirilishi." data-ru="Ввод оборудования в эксплуатацию и проверка всех систем.">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 hover:text-orange-600" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="certification-item">
+                            <div class="certification-badge">
+                                <i class="fa-regular fa-file-lines text-4xl"></i>
+                            </div>
+                            <h4 data-uz="Kranlarni ro‘yxatdan o‘tkazish" data-ru="Постановка кранов на учет">
+                            </h4>
+                            <p data-uz="Davlat organlarida texnikani rasmiy ro‘yxatdan o‘tkazish." data-ru="Оформление и регистрация башенных кранов в уполномоченных органах.">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 hover:text-orange-600" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="certification-item">
+                            <div class="certification-badge">
+                                <i class="fa-solid fa-gears text-4xl"></i>
+                            </div>
+                            <h4 data-uz="Ehtiyot qismlar bilan ta’minlash" data-ru="Поставка запасных частей">
+                            </h4>
+                            <p data-uz="Original ehtiyot qismlar va tezkor ta’minot." data-ru="Поставка оригинальных запчастей и оперативная логистика.">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 hover:text-orange-600" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="certification-item">
+                            <div class="certification-badge">
+                                <i class="fa-solid fa-award text-4xl"></i>
+                            </div>
+                            <h4 data-uz="Kafolatli va kafolatdan keyingi servis" data-ru="Гарантийное и послегарантийное обслуживание">
+                            </h4>
+                            <p data-uz="Texnik xizmat ko‘rsatish va doimiy texnik qo‘llab-quvvatlash." data-ru="Техническое обслуживание и сервисная поддержка на всех этапах эксплуатации.">
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+        <!-- /Certifications Section -->
+
+
+        <!-- Call To Action Section -->
+        <section id="call-to-action" class="call-to-action section light-background px-14">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-10">
+                        <div class="cta-header text-center" data-aos="fade-up" data-aos-delay="200">
+                            <h2 data-uz="Biz bilan bog‘lanish" data-ru="Связаться с нами">
+                            </h2>
+
+                            <p data-uz="Savollaringiz yoki hamkorlik bo‘yicha murojaatlaringiz uchun biz bilan bog‘laning. Mutaxassislarimiz sizga tezkor yordam ko‘rsatadi." data-ru="Свяжитесь с нами по любым вопросам или предложениям о сотрудничестве. Наши специалисты оперативно ответят вам.">
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="cta-main" data-aos="fade-up" data-aos-delay="300">
+                    <div class="row align-items-center g-5">
+
+                        <div class="col-lg-6">
+                            <div class="achievements-grid">
+
+                                <div class="achievement-item" data-aos="zoom-in" data-aos-delay="400">
+                                    <div class="achievement-icon">
+                                        <i class="bi bi-globe"></i>
+                                    </div>
+                                    <div class="achievement-info">
+                                        <h3>50+</h3>
+                                        <span data-ru="Экспорт в более чем 50 стран и регионов мира" data-uz="Mahsulotlarimiz dunyoning 50 dan ortiq mamlakat va hududlariga eksport qilinadi">
+                </span>
+                                    </div>
+                                </div>
+
+                                <div class="achievement-item" data-aos="zoom-in" data-aos-delay="450">
+                                    <div class="achievement-icon">
+                                        <i class="bi bi-people-fill"></i>
+                                    </div>
+                                    <div class="achievement-info">
+                                        <h3>2300+</h3>
+                                        <span data-ru="Более 2 300 квалифицированных сотрудников" data-uz="2 300 dan ortiq malakali xodimlar faoliyat yuritadi">
+                </span>
+                                    </div>
+                                </div>
+
+                                <div class="achievement-item" data-aos="zoom-in" data-aos-delay="500">
+                                    <div class="achievement-icon">
+                                        <i class="bi bi-box-seam"></i>
+                                    </div>
+                                    <div class="achievement-info">
+                                        <h3>50000+</h3>
+                                        <span data-ru="Произведено и поставлено более 50 000 комплектов кранов и подъёмников" data-uz="50 mingdan ortiq kranlar va ko‘tarish uskunalari ishlab chiqarilgan">
+                </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-6">
+                            <div class="action-panel" data-aos="fade-left" data-aos-delay="350">
+
+                                <div class="panel-content">
+                                    <h3 data-uz="Galereya" data-ru="Галерея">
+                                    </h3>
+
+                                    <p data-uz="Ushbu bo‘limda kompaniyamiz faoliyati, yetkazib berilgan texnika, montaj jarayonlari va amalga oshirilgan loyihalardan lavhalarni ko‘rishingiz mumkin." data-ru="В данном разделе представлены фотографии деятельности нашей компании, поставленной техники, монтажных работ и реализованных проектов.">
+                                    </p>
+
+
+                                    <div class="action-buttons">
+                                        <!-- <a href="quote.html" class="btn-primary">
+                                            <span>Request Quote</span>
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a> -->
+                                        <a href="project-details.html" class="btn-secondary">
+                                            <span data-uz="Galereyani ko‘rish" data-ru="Посмотреть галерею">
+</span>
+
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contact-quick">
+                                    <div class="contact-row">
+                                        <i class="bi bi-telephone-fill"></i>
+                                        <div class="contact-details">
+                                            <span class="contact-label" data-uz="Telefon" data-ru="Телефон">
+                  Direct Line
+            </span>
+                                            <span class="contact-value">+998954420909</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-row">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        <div class="contact-details">
+                                            <span class="contact-label" data-uz="Elektron pochta" data-ru="Электронная почта">
+                  Email
+            </span>
+                                            <span class="contact-value">bekzod.abdurakhmonovnobl@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Call To Action Section -->
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container lg:px-[112px]">
+            <div class="row gy-5">
+
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <a href="index.html" class="logo d-flex align-items-center mb-3">
+                            <span class="sitename">DAHAN</span>
+                        </a>
+
+                        <!-- короткое описание -->
+                        <p class="tagline" data-ru="Надёжные инженерные решения, проверенные временем. Производство, поставка и сопровождение подъёмной техники." data-uz="Vaqt sinovidan o‘tgan ishonchli muhandislik yechimlari. Ko‘tarish texnikasini ishlab chiqarish, yetkazib berish va qo‘llab-quvvatlash.">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="footer-links-grid">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <h5 data-ru="Главная" data-uz="Asosiy"></h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#abt" data-ru="О компании" data-uz="Kompaniya haqida"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#servis" data-ru="Услуги" data-uz="Xizmatlar"></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <h5 data-ru="Техника" data-uz="Texnika"></h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="kran.html" data-ru="Краны" data-uz="Kranlar"></a>
+                                    </li>
+                                    <li>
+                                        <a href="lift.html" data-ru="Лифты" data-uz="Liftlar"></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <h5 data-ru="Корпоративный раздел" data-uz="Korporativ bo‘lim"></h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="service-details.html" data-ru="представление компании" data-uz="Kompaniya taqdimoti"></a>
+                                    </li>
+                                    <li>
+                                        <a href="project-details.html" data-ru="Галерея" data-uz="Galereya"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="footer-cta">
+                        <h5 data-ru="Связаться с нами" data-uz="Biz bilan bog‘lanish"></h5>
+                        <a href="contact.html" class="btn btn-outline" data-ru="Контакты" data-uz="Kontaktlar"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-bottom-content">
+                            <p class="mb-0" data-ru="© DAHAN. Все права защищены." data-uz="© DAHAN. Barcha huquqlar himoyalangan.">
+                            </p>
+                            <div class="credits">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

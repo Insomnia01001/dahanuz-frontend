@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Project Details - iConstruction Bootstrap Template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: iConstruction
+  * Template URL: https://bootstrapmade.com/iconstruction-bootstrap-construction-template/
+  * Updated: Jul 27 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="project-details-page">
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <a href="index.html" class="log d-flex align-items-center me-auto">
+                <img src="assets/img/logo_16f18a4f.png" alt="">
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li>
+                        <a href="index.html" data-uz="Bosh sahifa" data-ru="Главная">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#abt" data-uz="Kompaniya haqida" data-ru="О компании">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#servis" data-uz="Xizmatlar" data-ru="Услуги">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="kran.html" class="active" data-uz="Kranlar" data-ru="Краны">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="lift.html" data-uz="Liftlar" data-ru="Лифты">
+                        </a>
+                    </li>
+
+
+                    <li class="dropdown">
+                        <a href="#">
+                            <span data-uz="Korporativ displey" data-ru="Корпоративный дисплей">
+    </span>
+                            <i class="bi bi-chevron-down toggle-dropdown"></i>
+                        </a>
+
+                        <ul>
+                            <li>
+                                <a href="service-details.html" data-uz="Kompaniya taqdimoti" data-ru="Представление компании">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="project-details.html" data-uz="Galereya" data-ru="Галерея">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+
+
+                    <li>
+                        <a href="contact.html" data-uz="Kontaktlar" data-ru="Контакты">
+                        </a>
+                    </li>
+                    <!-- LANGUAGE -->
+                    <li class="dropdown">
+                        <a href="#">
+                            <span id="current-lang">UZ</span>
+                            <i class="bi bi-chevron-down toggle-dropdown"></i>
+                        </a>
+                        <ul>
+                            <li><a href="#" onclick="setLang('uz')">UZ</a></li>
+                            <li><a href="#" onclick="setLang('ru')">RU</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/construction/showcase-2.webp);">
+            <div class="container position-relative">
+            </div>
+        </div>
+        <!-- End Page Title -->
+
+        <section id="krans" class="team section  mt-5 px-14">
+            <div class="container section-title " data-aos="fade-up">
+                <h2 data-uz="Kranlar" data-ru="Краны"></h2>
+                <p data-uz="Biz taqdim etayotgan minorali kranlar" data-ru="Башенные краны, которые мы предлагаем">
+                </p>
+            </div>
+
+            <div class="container">
+                <div class="row gy-5" id="kran-container"></div>
+            </div>
+        </section>
+        <template id="kran-template">
+  <div class="col-lg-4 col-md-6 ">
+    <div class="team-member" data-aos="fade-up">
+
+      <div class="member-img">
+        <div class="swiper kranSwiper">
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="member-info">
+        <h4 class="kran-name"></h4>
+        <span class="kran-sub"></span>
+        <p class="kran-desc"></p>
+      </div>
+
+    </div>
+  </div>
+        </template>
+
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+
+                const API_URL = "http://127.0.0.1:8000/krans/";
+                const container = document.getElementById("kran-container");
+                const template = document.getElementById("kran-template");
+
+                let KRANS_CACHE = [];
+
+                fetch(API_URL)
+                    .then(r => r.json())
+                    .then(data => {
+                        KRANS_CACHE = data;
+                        renderKrans();
+                    });
+
+                function getLang() {
+                    return localStorage.getItem("lang") || "uz";
+                }
+
+                function renderKrans() {
+                    const lang = getLang();
+                    container.innerHTML = "";
+
+                    KRANS_CACHE.forEach(kran => {
+                        const clone = template.content.cloneNode(true);
+
+                        // 🔗 CARD BOSILADIGAN QILAMIZ
+                        const card = clone.querySelector(".team-member");
+                        card.style.cursor = "pointer";
+                        card.addEventListener("click", () => {
+                            window.location.href = `project-details copy.html?id=${kran.id}`;
+                        });
+
+                        // 🔤 NAME (o‘zgarmadi)
+                        clone.querySelector(".kran-name").innerText =
+                            lang === "ru" ? kran.name_ru : kran.name_uz;
+
+                        // 📋 DESCRIPTION O‘RNIGA TEXNIK MA’LUMOT
+                        clone.querySelector(".kran-desc").innerText = lang === "ru" ?
+                            `Макс. грузоподъёмность: ${kran.maxliftingcap}
+Макс. радиус: ${kran.maxradius}
+Рабочая нагрузка: ${kran.liftingcap}
+Подъём крюка: ${kran.hooklifting}` :
+                            `Maksimal yuk ko‘tarish: ${kran.maxliftingcap}
+Maksimal radius: ${kran.maxradius}
+Ishchi yuklama: ${kran.liftingcap}
+Ilgak ko‘tarilishi: ${kran.hooklifting}`;
+
+                        // 🖼️ IMAGES (o‘zgarmadi)
+                        const wrapper = clone.querySelector(".swiper-wrapper");
+                        wrapper.innerHTML = "";
+
+                        (kran.images || []).forEach(img => {
+                            wrapper.innerHTML += `
+                    <div class="swiper-slide">
+                        <img src="${img.image_url}" class="img-fluid">
+                    </div>
+                `;
+                        });
+
+                        container.appendChild(clone);
+                    });
+
+                    initSwipers();
+                }
+
+                function initSwipers() {
+                    document.querySelectorAll(".kranSwiper").forEach(el => {
+                        new Swiper(el, {
+                            loop: true,
+                            pagination: {
+                                el: el.querySelector(".swiper-pagination"),
+                                clickable: true
+                            }
+                        });
+                    });
+                }
+
+                // 🔥 TIL O‘ZGARSA QAYTA CHIQARADI
+                window.addEventListener("langChanged", renderKrans);
+
+            });
+        </script>
+
+        <!-- Page Title -->
+        <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/construction/showcase-2.webp);">
+            <div class="container position-relative">
+            </div>
+        </div>
+        <!-- End Page Title -->
+
+    </main>
+
+    <footer id="footer" class="footer dark-background lg:px-[112px]">
+
+        <div class="container">
+            <div class="row gy-5">
+
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <a href="index.html" class="logo d-flex align-items-center mb-3">
+                            <span class="sitename">DAHAN</span>
+                        </a>
+
+                        <!-- короткое описание -->
+                        <p class="tagline" data-ru="Надёжные инженерные решения, проверенные временем. Производство, поставка и сопровождение подъёмной техники." data-uz="Vaqt sinovidan o‘tgan ishonchli muhandislik yechimlari. Ko‘tarish texnikasini ishlab chiqarish, yetkazib berish va qo‘llab-quvvatlash.">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="footer-links-grid">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <h5 data-ru="Главная" data-uz="Asosiy"></h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="index.html#abt" data-ru="О компании" data-uz="Kompaniya haqida"></a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#servis" data-ru="Услуги" data-uz="Xizmatlar"></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <h5 data-ru="Техника" data-uz="Texnika"></h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="kran.html" data-ru="Краны" data-uz="Kranlar"></a>
+                                    </li>
+                                    <li>
+                                        <a href="lift.html" data-ru="Лифты" data-uz="Liftlar"></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <h5 data-ru="Корпоративный раздел" data-uz="Korporativ bo‘lim"></h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="service-details.html" data-ru="представление компании" data-uz="Kompaniya taqdimoti"></a>
+                                    </li>
+                                    <li>
+                                        <a href="project-details.html" data-ru="Галерея" data-uz="Galereya"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="footer-cta">
+                        <h5 data-ru="Связаться с нами" data-uz="Biz bilan bog‘lanish"></h5>
+                        <a href="contact.html" class="btn btn-outline" data-ru="Контакты" data-uz="Kontaktlar"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-bottom-content">
+                            <p class="mb-0" data-ru="© DAHAN. Все права защищены." data-uz="© DAHAN. Barcha huquqlar himoyalangan.">
+                            </p>
+                            <div class="credits">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
