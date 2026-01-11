@@ -172,7 +172,7 @@
 
         <script>
             document.addEventListener("DOMContentLoaded", function() {
-                fetch("http://dahanuz-production.up.railway.app/lifts/")
+                fetch("https://dahanuz-production.up.railway.app/lifts/")
                     .then(r => r.json())
                     .then(d => console.log("LIFTS:", d))
                     .catch(e => console.error("FETCH ERROR:", e));
