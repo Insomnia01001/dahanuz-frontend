@@ -1,13 +1,24 @@
-# Python
+# Python (agar monorepo bo‘lsa)
 venv/
 __pycache__/
 *.pyc
-requirements.txt
 
-# Node
+# Node / Frontend
 node_modules/
 npm-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# Frontend env files (MUHIM)
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+
+# Build output
+dist/
+build/
 
 # OS / Editor
 .DS_Store
