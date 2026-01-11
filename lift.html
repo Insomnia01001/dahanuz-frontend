@@ -172,12 +172,12 @@
 
         <script>
             document.addEventListener("DOMContentLoaded", function() {
-                fetch("https://dahanuz-production.up.railway.app/lifts/")
+                fetch("https://dahan.uz/lifts/")
                     .then(r => r.json())
                     .then(d => console.log("LIFTS:", d))
                     .catch(e => console.error("FETCH ERROR:", e));
 
-                const API_URL = "https://dahanuz-production.up.railway.app/lifts/";
+                const API_URL = "https://dahan.uz/lifts/";
                 const container = document.getElementById("kran-container");
                 const template = document.getElementById("kran-template");
 
